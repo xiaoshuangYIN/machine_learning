@@ -1,0 +1,733 @@
+Last login: Wed Oct  5 08:22:24 on ttys000
+wl-10-190-54-159:~ Sharon$ cd Desktop/
+wl-10-190-54-159:Desktop Sharon$ l
+-bash: l: command not found
+wl-10-190-54-159:Desktop Sharon$ cd 2016_fall/
+wl-10-190-54-159:2016_fall Sharon$ ls
+590				algorithm 
+HW_latex_format.aux		data-intensive
+HW_latex_format.log		git
+HW_latex_format.pdf		job
+HW_latex_format.synctex.gz	machine-learning
+HW_latex_format.tex		nine-chap
+wl-10-190-54-159:2016_fall Sharon$ cd machine-learning/
+wl-10-190-54-159:machine-learning Sharon$ ls
+hw1	hw2	hw3	lab01	quizzes
+wl-10-190-54-159:machine-learning Sharon$ cd hw3
+wl-10-190-54-159:hw3 Sharon$ ls
+#q4 2.py#				HW3_ML_Xiaoshuang_YIN.synctex.gz
+HW3_ML_Xiaoshuang_YIN.aux		HW3_ML_Xiaoshuang_YIN.tex
+HW3_ML_Xiaoshuang_YIN.log		code
+HW3_ML_Xiaoshuang_YIN.pdf		q4 2.py
+wl-10-190-54-159:hw3 Sharon$ cd code/
+wl-10-190-54-159:code Sharon$ ls
+bal_data.txt	bal_data.txt~	classifiers.py	classifiers.py~
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 214, in <module>
+    classifier = get_classifier(clas_type)
+  File "classifiers.py", line 182, in get_classifier
+    elif class_type == "MLP":
+NameError: global name 'class_type' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+  File "classifiers.py", line 9
+    from sklearn import sklearn.neural_network
+                               ^
+SyntaxError: invalid syntax
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 214, in <module>
+    classifier = get_classifier(clas_type)
+  File "classifiers.py", line 182, in get_classifier
+    elif class_type == "MLP":
+NameError: global name 'class_type' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 214, in <module>
+    classifier = get_classifier(clas_type)
+  File "classifiers.py", line 182, in get_classifier
+    elif class_type == "MLP":
+NameError: global name 'class_type' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 214, in <module>
+    classifier = get_classifier(clas_type)
+  File "classifiers.py", line 182, in get_classifier
+    elif class_type == "MLP":
+NameError: global name 'class_type' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+  File "classifiers.py", line 226
+    
+    ^
+SyntaxError: EOF while scanning triple-quoted string literal
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 202, in <module>
+    classifier = get_classifier(clas_type)
+  File "classifiers.py", line 182, in get_classifier
+    elif class_type == "MLP":
+NameError: global name 'class_type' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 202, in <module>
+    classifier = get_classifier(clas_type)
+  File "classifiers.py", line 183, in get_classifier
+    classifier = MLPClassifier(alpha=1)# logistic(samples, labels)
+NameError: global name 'MLPClassifier' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Traceback (most recent call last):
+  File "classifiers.py", line 204, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 127, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Traceback (most recent call last):
+  File "classifiers.py", line 201, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 127, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Traceback (most recent call last):
+  File "classifiers.py", line 207, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 132, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Traceback (most recent call last):
+  File "classifiers.py", line 208, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 132, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 208, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 132, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+^[[A^[[ATraceback (most recent call last):
+  File "classifiers.py", line 207, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 131, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 207, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 131, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 206, in <module>
+    ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 130, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Traceback (most recent call last):
+  File "classifiers.py", line 206, in <module>
+    mean, std =ten_fold_crossval(samples, labels, classifier, clas_type) 
+  File "classifiers.py", line 130, in ten_fold_crossval
+    plt.savefig('./%c.png',alg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/pyplot.py", line 561, in savefig
+    return fig.savefig(*args, **kwargs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/figure.py", line 1421, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+TypeError: print_figure() got multiple values for keyword argument 'dpi'
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+0.829166666667
+0.122771807296
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.775
+0.156080463579
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.804166666667
+0.163522424558
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.750833333333
+0.170230644193
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.800833333333
+0.18635576788
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 227, in <module>
+    ten_fold_nested_CV_svm()
+  File "classifiers.py", line 165, in ten_fold_nested_CV_svm
+    classifier = svr = SVC(kernel="rbf")
+NameError: global name 'SVC' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 227, in <module>
+    ten_fold_nested_CV_svm()
+  File "classifiers.py", line 168, in ten_fold_nested_CV_svm
+    nested_scores = np.zeros(NUM_TRIALS)
+NameError: global name 'np' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 227, in <module>
+    ten_fold_nested_CV_svm()
+  File "classifiers.py", line 168, in ten_fold_nested_CV_svm
+    nested_scores = numpy.zeros(NUM_TRIALS)
+NameError: global name 'NUM_TRIALS' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 227, in <module>
+    ten_fold_nested_CV_svm()
+  File "classifiers.py", line 169, in ten_fold_nested_CV_svm
+    clf = GridSearchCV(estimator=classifier, param_grid=p_grid, cv=inner_cv)
+NameError: global name 'GridSearchCV' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 227, in <module>
+    ten_fold_nested_CV_svm()
+  File "classifiers.py", line 169, in ten_fold_nested_CV_svm
+    clf = GridSearchCV(estimator=classifier, param_grid=p_grid, cv=inner_cv)
+NameError: global name 'inner_cv' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 227, in <module>
+    ten_fold_nested_CV_svm()
+  File "classifiers.py", line 170, in ten_fold_nested_CV_svm
+    clf.fit(X_iris, y_iris)
+NameError: global name 'X_iris' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 227, in <module>
+    ten_fold_nested_CV_svm()
+  File "classifiers.py", line 175, in ten_fold_nested_CV_svm
+    return nested_scorse
+NameError: global name 'nested_scorse' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 228, in <module>
+    print svn_nested_CV_score
+NameError: name 'svn_nested_CV_score' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+[ 0.75        0.75        0.625       0.625       0.5         0.875
+  0.85714286  0.42857143  0.42857143  0.71428571]
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 228, in <module>
+    svm_nested_CV_score_mean = svm_nested_CV_score_mean .mean() 
+NameError: name 'svm_nested_CV_score_mean' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 228, in <module>
+    svm_nested_CV_score_mean = svm_nested_CV_score_mean.mean() 
+NameError: name 'svm_nested_CV_score_mean' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+[ 0.75        0.75        0.625       0.625       0.5         0.875
+  0.85714286  0.42857143  0.42857143  0.71428571]
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+[ 0.75        0.75        0.625       0.625       0.5         0.875
+  0.85714286  0.42857143  0.42857143  0.71428571]
+mean : 0.655357142857
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 239, in <module>
+    MLP_nested_CV_score =ten_fold_nested_CV_MLP()
+  File "classifiers.py", line 182, in ten_fold_nested_CV_MLP
+    clf.fit(samples, labels)
+  File "/Library/Python/2.7/site-packages/sklearn/model_selection/_search.py", line 940, in fit
+    return self._fit(X, y, groups, ParameterGrid(self.param_grid))
+  File "/Library/Python/2.7/site-packages/sklearn/model_selection/_search.py", line 562, in _fit
+    for parameters in parameter_iterable
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 758, in __call__
+    while self.dispatch_one_batch(iterator):
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 608, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 571, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 109, in apply_async
+    result = ImmediateResult(func)
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 322, in __init__
+    self.results = batch()
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 131, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+  File "/Library/Python/2.7/site-packages/sklearn/model_selection/_validation.py", line 227, in _fit_and_score
+    estimator.set_params(**parameters)
+  File "/Library/Python/2.7/site-packages/sklearn/base.py", line 291, in set_params
+    (key, self.__class__.__name__))
+ValueError: Invalid parameter alpha for estimator SVC. Check the list of available parameters with `estimator.get_params().keys()`.
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+^[[B^[[A^Z
+[1]+  Stopped                 python classifiers.py
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+^Z
+[2]+  Stopped                 python classifiers.py
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+/Library/Python/2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:563: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+^Z
+[3]+  Stopped                 python classifiers.py
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 240, in <module>
+    MLP_nested_CV_score =ten_fold_nested_CV_MLP()
+  File "classifiers.py", line 183, in ten_fold_nested_CV_MLP
+    clf.fit(samples, labels)
+  File "/Library/Python/2.7/site-packages/sklearn/model_selection/_search.py", line 940, in fit
+    return self._fit(X, y, groups, ParameterGrid(self.param_grid))
+  File "/Library/Python/2.7/site-packages/sklearn/model_selection/_search.py", line 562, in _fit
+    for parameters in parameter_iterable
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 758, in __call__
+    while self.dispatch_one_batch(iterator):
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 608, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 571, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 109, in apply_async
+    result = ImmediateResult(func)
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 322, in __init__
+    self.results = batch()
+  File "/Library/Python/2.7/site-packages/sklearn/externals/joblib/parallel.py", line 131, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+  File "/Library/Python/2.7/site-packages/sklearn/model_selection/_validation.py", line 227, in _fit_and_score
+    estimator.set_params(**parameters)
+  File "/Library/Python/2.7/site-packages/sklearn/base.py", line 291, in set_params
+    (key, self.__class__.__name__))
+ValueError: Invalid parameter n_neighbors for estimator MLPClassifier. Check the list of available parameters with `estimator.get_params().keys()`.
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+[ 0.625       0.5         0.75        0.75        1.          0.625
+  0.85714286  0.42857143  0.85714286  1.        ]
+mean : 0.739285714286
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 239, in <module>
+    kn_nested_CV_score =ten_fold_nested_CV_kn()
+NameError: name 'ten_fold_nested_CV_kn' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 239, in <module>
+    kn_nested_CV_score =ten_fold_nested_CV_kn()
+NameError: name 'ten_fold_nested_CV_kn' is not defined
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+[ 0.625       0.5         0.75        0.75        1.          0.625
+  0.85714286  0.42857143  0.85714286  1.        ]
+mean : 0.739285714286
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+Traceback (most recent call last):
+  File "classifiers.py", line 231, in <module>
+    classifier = get_classifier(clas_type)
+  File "classifiers.py", line 215, in get_classifier
+    return classifier
+UnboundLocalError: local variable 'classifier' referenced before assignment
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.734166666667
+0.1775
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.734166666667
+0.1775
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.734166666667
+0.1775
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.734166666667
+0.1775
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+  File "classifiers.py", line 74
+    get the ROC curve for the classifier that is simply the feature
+    ^
+IndentationError: unexpected indent
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.734166666667
+0.1775
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.734166666667
+0.1775
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+wl-10-190-54-159:code Sharon$ python classifiers.py
+0.734166666667
+0.1775
+[ 0.75        0.75        0.625       0.625       0.5         0.875
+  0.85714286  0.42857143  0.42857143  0.71428571]
+mean : 0.655357142857
+[ 0.625       0.5         0.75        0.75        1.          0.625
+  0.85714286  0.42857143  0.85714286  1.        ]
+mean : 0.739285714286
+wl-10-190-54-159:code Sharon$ 
+  [Restored Oct 6, 2016, 10:21:33 AM]
+Last login: Thu Oct  6 10:21:25 on console
+Restored session: Wed Oct 5 22:14:46 EDT 2016
+wl-10-190-54-159:code Sharon$ emacs classifiers.py
+
+import numpy
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import OneHotEncoder
+from sklearn import svm, neighbors, tree
+from sklearn.model_selection import cross_val_score
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+from sklearn.metrics import roc_curve, auc
+from sklearn.model_selection import GridSearchCV, cross_val_score, KFold
+from sklearn.neural_network import MLPClassifier
+##############                                                                                    
+## functions##                                                                                    
+##############                                                                                    
+
+def make_binary_matrix(raw_data):
+    '''                                                                                           
+    func: make binary matrix of samples                                                           
+    args: original sample matrixs                                                                 
+    returns: a binary matix                                                                       
+                                                                                                  
+    original data:                                                                                
+    YELLOW,SMALL,STRETCH,ADULT,T                                                                  
+    PURPLE,LARGE,DIP,    CHILD,F                                                                  
+    '''
+
+    samples = []
+    labels = []
+    for old_row in raw_data:
+
+        old_row = old_row.replace('\n','')
+        row = old_row.split(',')
+
+        sample = []
+    #color binary                                                                                 
+        if row[0] == 'YELLOW':
+            sample += [1,]
+        elif row[0] == 'PURPLE':
+            sample += [0,]
+    #size binary                                                                                  
+        if row[1] == 'LARGE':
+            sample += [1,]
+        elif row[1] == 'SMALL':
+            sample += [0,]
+    #act binary                                                                                   
+        if row[2] == 'STRETCH':
+            sample += [1,]
+        elif row[2] == 'DIP':
+            sample += [0,]
+    #age binary                                                                                   
+        if row[3] == 'ADULT':
+            sample += [1,]
+        elif row[3] == 'CHILD':
+            sample += [0,]
+        samples += [sample,]
+    #label                     
+     if row[4] == 'T':
+            labels += [1,]
+        elif row[4] == 'F':
+            labels += [0,]
+    return numpy.array(samples),numpy.array(labels)
+
+def parser(file):
+    '''                                                                                           
+    func: parse file into a matrix and make the attribute binary                                  
+    Args: path to file (dataset file is in the samw folder)                                       
+    returns: matrix with binary elements                                                          
+    '''
+
+    data = (open(file, "r")).readlines();
+    samples, labels = make_binary_matrix(data)
+    return samples, labels
+def ten_fold_crossval(samples, labels, clf, className):
+    """                                                                                           
+    ten fold cross validation                                                                     
+    output ROC for each feature(-----), output ROC for each fold(solid line)                      
+    print mean and std for the classifier                                                         
+                                                                                                  
+    args: samepls, labels, classifier, className                                                  
+    returns:None                                                                                  
+    """
+    numpy_array = numpy.asarray(samples)
+    # ROC for each attribute                                                                      
+    for column in range(len(samples[0])):
+        # call sklearn function roc_curve                                                         
+        fpr, tpr, th = roc_curve(labels, numpy_array[:,column])
+        line = plt.plot(fpr, tpr, lw=2.0, color='blue')
+        plt.setp(line, linestyle='--')
+        plt.show
+    # cross validation                                                                            
+    kf = KFold(n_splits=10)
+    aucs_list = []
+    i = 0
+    for train_index, test_index in kf.split(samples):
+        #fit                                                                                      
+        clf.fit(samples[train_index], labels[train_index])
+        prediction = clf.predict(samples[test_index])
+        #ROC for each fold                                                                        
+        fpr, tpr, th= roc_curve(labels[test_index], prediction, drop_intermediate=False)
+        roc_auc = auc(fpr, tpr)
+        aucs_list.append(roc_auc)
+        plt.plot(fpr, tpr, lw=1.5, label='ROC fold %d (area = %f)' % (i, roc_auc))
+        i += 1
+
+    plt.xlim([-0.05, 1.10])
+    plt.ylim([-0.05, 1.10])
+    plt.xlabel('FPR')
+    plt.ylabel('TPR')
+    plt.title('ROC Curves for %s for each of the 10 test folds' % className)
+    plt.legend(loc="lower right", prop={'size':8})
+    plt.show()
+
+    return numpy.mean(aucs_list), numpy.std(aucs_list)
+    def ten_fold_nested_CV_svm():
+    '''                                                                                           
+    func: get the ten fold nested CV score for svm                                                
+    algs:none                                                                                     
+    return: score list                                                                            
+    '''
+    classifier = svr = svm.SVC(kernel="linear")
+    p_grid = {"C": [1, 10, 100],
+              "gamma": [.01, .1]}
+    inner_cv = KFold(n_splits=10, shuffle=False)
+    clf = GridSearchCV(estimator=classifier, param_grid=p_grid, cv=inner_cv)
+    clf.fit(samples, labels)
+    outer_cv = KFold(n_splits=10, shuffle=False)
+    # Nested CV with parameter optimization                                                       
+    nested_score = cross_val_score(clf, samples, labels, cv=outer_cv)
+
+    return nested_score
+
+def ten_fold_nested_CV_kn():
+    '''                                                                                           
+    func: get the ten fold nested CV score for neasrest neighbor                                  
+    algs:none                                                                                     
+    return: score list                                                                            
+    '''
+    classifier = neighbors.KNeighborsClassifier(weights="uniform")
+    p_grid = {"n_neighbors": [2,3,4]}
+    inner_cv = KFold(n_splits=10, shuffle=False)
+    clf = GridSearchCV(estimator=classifier, param_grid=p_grid, cv=inner_cv)
+    clf.fit(samples, labels)
+    outer_cv = KFold(n_splits=10, shuffle=False)
+    # Nested CV with parameter optimization                                                       
+    nested_score = cross_val_score(clf, samples, labels, cv=outer_cv)
+
+    return nested_score
+    def get_classifier(clas_type):
+    '''                                                                                           
+    func: get the classifier based on the classifier type selected                                
+    args: classifier type                                                                         
+    returns: the classifier                                                                       
+    '''
+    if clas_type == "svm":
+        classifier = svm.SVC(kernel='linear', C=1)
+
+    elif clas_type == "decision_tree":
+        classifier = tree.DecisionTreeClassifier()
+
+    elif clas_type == "random_forest":
+        classifier = RandomForestClassifier(n_estimators=10)
+
+    elif clas_type == "adaBoost":
+        classifier = AdaBoostClassifier(n_estimators=100)
+
+    elif clas_type == "MLP":
+        classifier = MLPClassifier(alpha=1)
+
+    elif clas_type == "nearest_neighbors":
+        classifier = neighbors.KNeighborsClassifier(5, weights="uniform")
+
+
+    return classifier
+##############                                                                                    
+#### main ####                                                                                    
+##############                                                                                    
+
+## read file                                                                                      
+data_file = "./bal_data.txt"
+samples, labels = parser(data_file)
+
+
+
+## CHOOSE 1 OF THE 5 CLASSIFIERS HERE                                                             
+## TO DO CORSS VALIDATION                                                                         
+## svm,decision_tree,random_forest, adaBoost,MLP,                                                 
+clas_type = "nearest_neighbors"
+classifier = get_classifier(clas_type)
+## do cross-validation and draw ROC on each fold for the selected classifier                      
+mean, std =ten_fold_crossval(samples, labels, classifier, clas_type)
+print mean
+print std
+
+## CHOSOSE 2/6 CALSSIFIERS TO DO NESTED CROSS VALIDATION                                          
+
+svm_nested_CV_score =ten_fold_nested_CV_svm()
+svm_nested_CV_score_mean = svm_nested_CV_score.mean()
+print svm_nested_CV_score
+print "mean :", svm_nested_CV_score_mean
+'''                                                                                               
+'''
+kn_nested_CV_score = ten_fold_nested_CV_kn()
+kn_nested_CV_score_mean = kn_nested_CV_score.mean()
+print kn_nested_CV_score
+print "mean :", kn_nested_CV_score_mean
+
+## TO run all 6 classifiers together, uncomment below                                             
+'''                                                                                               
+## do corss_validation for the classifier and get the score                                       
+# initialize lists to keep track of the cross validation score for each classifier                
+means = []                                                                                        
+stds = []                                                                                         
+classf_list = ["MLP"]                                                                             
+#classf_list = ["svm", "decision_tree", "nearest_neighbors","random_forest","adaBoost","MLP"]     
+for clas_type in classf_list:                                                                     
+    # get the classifier                                                                          
+    classifier = get_classifier(clas_type)                                                        
+    # go through cross validation                                                                 
+    ten_fold_crossval(samples, labels, classifier, clas_type)                                     
+    # get cross validation score                                                                  
+    scores = cross_val_score(classifier, samples, labels, cv=5)                                   
+    mean = scores.mean()                                                                          
+    std = scores.std()                                                                            
+    means += [mean,]                                                                              
+    stds += [std,]                                                                                
+print means                                                                                       
+print stds                                                                                        
+'''
+
+
+
+
+
+
+
+
+
